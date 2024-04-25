@@ -29,11 +29,15 @@
     </center>
       <br>
     <div class="box-container">
-    <b>1. Streamlined Transactions: Say goodbye to the hassle of carrying cash or additional cards. Our system allows students to use their school IDs as a one-stop solution for all their cafeteria purchases. <br> 
+    <b style="font-size: 20px;">1. Streamlined Transactions: Say goodbye to the hassle of carrying cash or additional cards. Our system allows students to use their school IDs as a one-stop solution for all their cafeteria purchases. <br> 
        2. Effortless Fund loading: students can easily load funds into their school IDs through designated terminals or mobile phones, ensuring they always have the necessary balance fir their dining needs. <br>
        3. Convenient Purchases: Making purchases at the cafeteria has never been easier. Students simply needs to present their school IDs, which are scanned by the cafeteria staff, and transaction are swiftly processed through the system. <br>
-
-    </b>
+        4. Real-Time Balance Checking: With the touch of a button, students can check their ID balances in real-time, empowering their knowledge of their remaining funds for future purchases. <br>    
+       5. Lost ID Protection: In the unfortunate event of a lost or stolen ID, students can promptly report it through the system, safeguarding their funds and preventing unauthorized usage. <br>       
+       6. Remote Transaction Monitoring: Parents, even those living abroad, can remotely monitor their children's cafeteria transactions in real-time through a secure online portal or mobile application.   <br>
+        
+    
+      </b>
     </div>
     <script>
 

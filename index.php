@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SMCC Canteen log-in</title>
      <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
@@ -28,29 +28,33 @@
 
 
      </center>
+
+     <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            
+            var formData = new FormData(this);
+            
+            fetch('connect.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Redirect to home page or do something else on successful login
+                    window.location.replace("home.html");
+                } else {
+                    // Display error message
+                    alert("Invalid username or password. Please try again.");
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
     </body>
    
           
 </html>
 
-<?php
-   
-    if (isset($_GET['error'])) {
-        $error_message = "";
-       
-        switch ($_GET['error']) {
-            case 'invalid_credentials':
-                $error_message = "Invalid username or password. Please try again.";
-                break;
-            case 'username_not_found':
-                $error_message = "Username not found. Please check your username and try again.";
-                break;
-           
-            default:
-                $error_message = "An error occurred. Please try again.";
-                break;
-        }
-       
-        echo '<script>alert("' . $error_message . '");</script>';
-    }
-?>
